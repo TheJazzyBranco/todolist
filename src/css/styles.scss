@@ -1,0 +1,104 @@
+@import url("./base/_reset.scss");
+@import url("./icons/style.css");
+@import url("./base/_fonts.scss");
+
+body {
+  background-color: #eef3f6;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+.todoApp {
+  width: 580px;
+  margin: 60px auto;
+  &__form {
+    display: flex;
+    background-color: #0e4439;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: 4px 4px 8px 0px #8e9492;
+    &__input {
+      width: 100%;
+      color: #fff;
+      background-color: #50ad98;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px 30px 30px 10px;
+      margin-right: -60px;
+      padding-right: 80px;
+      padding-left: 24px;
+      outline: none;
+      &::placeholder {
+        color: #fff;
+        opacity: 0.4;
+      }
+      &--error {
+        background-color: #f00;
+        &::placeholder {
+          color: #fff;
+        }
+      }
+    }
+    &__button {
+      display: flex;
+      color: #1a8872;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50%;
+      width: 74px;
+      height: 62px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__list {
+    padding: 10px;
+    &__item {
+      display: flex;
+      background-color: #fff;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      padding: 24px;
+      align-items: center;
+      box-shadow: 4px 4px 8px 0px #cbd5d2;
+      .text {
+        margin-right: auto;
+      }
+    }
+    a.icon {
+      display: flex;
+      align-items: center;
+      &--remove {
+        font-size: 40px;
+        color: #cbd5d2;
+        padding-right: 15px;
+        border-right: 1px solid #cbd5d2;
+        &:hover {
+          color: rgb(206, 26, 2);
+          transition: 800ms;
+        }
+      }
+      &--check {
+        display: flex;
+        font-size: 20px;
+        color: #19ba99;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 18px;
+        margin-top: 4px;
+        border-radius: 10px;
+      }
+    }
+    .icon-check {
+      margin-left: 3px;
+    }
+  }
+}
+
+.todoApp__list__item--checked span {
+  display: inline-block;
+  position: relative;
+  color: #000;
+  text-decoration: line-through;
+  text-decoration-color: #19ba99;
+}

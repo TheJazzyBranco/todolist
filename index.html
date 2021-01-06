@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="./icons/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="todoApp">
+      <form action="" class="todoApp__form todoApp__form__input--error">
+        <input
+          type="text"
+          class="todoApp__form__input todoApp__form__input"
+          autofocus
+          placeholder="Enter an activity..."
+        />
+        <a href="#" class="todoApp__form__button">
+          <svg class="icon icon-checkmark">
+            <use xlink:href="./icons/symbol-defs.svg#icon-checkmark"></use>
+          </svg>
+        </a>
+      </form>
+
+      <ul class="todoApp__list">
+        <li class="todoApp__list__item todoApp__list__item--check">
+          <span class="text">Html & css studeren</span>
+          <a href="#" class="icon icon--remove">
+            <svg class="icon icon-bin">
+              <use xlink:href="./icons/symbol-defs.svg#icon-bin"></use>
+            </svg>
+          </a>
+          <a href="#" class="icon icon--check">
+            <svg class="icon icon-checkmark">
+              <use xlink:href="./icons/symbol-defs.svg#icon-checkmark"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="todoApp__list__item todoApp__list__item--checked">
+          <span class="text">Php studeren</span>
+          <a href="#" class="icon icon--remove">
+            <svg class="icon icon-bin">
+              <use xlink:href="./icons/symbol-defs.svg#icon-bin"></use>
+            </svg>
+          </a>
+          <a href="#" class="icon icon--check">
+            <svg class="icon icon-checkmark2">
+              <use xlink:href="./icons/symbol-defs.svg#icon-checkmark2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="todoApp__list__item todoApp__list__item--checked">
+          <span class="text">Javascript studeren</span>
+          <a href="#" class="icon icon--remove">
+            <svg class="icon icon-bin">
+              <use xlink:href="./icons/symbol-defs.svg#icon-bin"></use>
+            </svg>
+          </a>
+          <a href="#" class="icon icon--check">
+            <svg class="icon icon-checkmark">
+              <use xlink:href="./icons/symbol-defs.svg#icon-checkmark"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script defer src="./icons/svgxuse.js"></script>
+  </body>
+</html>
